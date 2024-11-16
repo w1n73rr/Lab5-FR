@@ -10,7 +10,7 @@
             <a href="page2.html">Позиционирование элементов</a>
             <a href="table.html">Таблица</a>
         </div> 
-        <table>
+        <table id="table">
             <caption>Студенты</caption>
             <tr>
                 <th>id</th>
@@ -94,14 +94,15 @@
                 <input type="number" id="age" name="age" min="16" max="100" required><br>
             <fieldset>
                 <legend>Форма поступления:</legend>
-                <input type="radio" id="budget" name="formofadmission" value="Бюджет" required>
+                <input type="radio" id="budget" name="formOfAdmission" value="Бюджет" required>
                 <label for="budget">Бюджет</label>
-                <input type="radio" id="contract" name="formofadmission" value="Контракт">
+                <input type="radio" id="contract" name="formOfAdmission" value="Контракт">
                 <label for="contract">Контракт</label><br>
             </fieldset>
                 <label for="direction">Название направления: </label>
                 <input type="text" id="direction" name="direction" required><br>
-                <input type="submit" value="Добавить" id="addButton">
+                <input type="submit" value="Добавить" id="addButton" onclick="addRow()">  
         </form>
+        <script src="js/form-handler.js"></script>
     </body>
 </html>
