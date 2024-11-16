@@ -1,0 +1,94 @@
+body {
+    background-color: lightgrey;
+}
+a:hover  {
+    color: white;
+    transition: color 0.5s;
+}
+a {
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif; 
+    color: black;
+}
+.header {
+    display:flex;
+    justify-content: right;
+    margin: 20px;
+}
+caption {
+    font-family: 'Roboto',sans-serif; 
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+table {
+    width: 100%;
+    border-radius: 20px;
+    border-spacing: 5px;
+    margin-bottom: 20px;
+}
+table, th,td {
+    border-collapse:collapse ;
+}
+th,td {
+    padding: 5px;
+}
+th {
+    background-color: grey;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: rgb(52, 152, 219,0.6);
+}
+tr:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+th:first-child {
+border-top-left-radius: 10px;
+}
+th:last-child {
+border-top-right-radius: 10px;
+border-right: none;
+}
+tr:last-child td:first-child {
+border-radius: 0 0 0 10px;
+}
+tr:last-child td:last-child {
+border-radius: 0 0 10px 0;
+}
+tr td:last-child {
+border-right: none;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+input {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+form input[type="submit"]:hover {
+    background-color: rgb(52, 152, 219,0.6);
+}
+form input[type="submit"] {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

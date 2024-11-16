@@ -1,0 +1,149 @@
+body {
+    background-color: lightgrey;
+}
+h1 {
+  background-color: lightgray;
+  color: #000000;
+  text-align: center;  
+  font-family: 'Roboto',sans-serif ;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+}
+h2 {
+ text-align: center;
+ color: black;
+ margin-top: 100 px;
+ font-family: 'Roboto',sans-serif;
+}
+ul,ol,a,p {
+    font-family: 'Roboto',sans-serif; 
+    color: black;
+}
+li {
+    margin-top: 10px;
+}
+.content {
+    display: flex;
+    max-width: 85%;
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+}
+
+.content-left {
+    margin: 20px;
+    background-color: rgb(52, 152, 219) ;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px black;
+}
+
+.content-right {
+    margin: 20px;
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px black;
+}
+img {
+    width: 300px;
+}
+a:hover  {
+    color: white;
+    transition: color 0.5s;
+}
+a {
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header {
+    display:flex;
+    justify-content: right;
+    margin: 20px;
+}
+.container {
+    background-color: #3498db;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px black;
+}
+.block {
+    height: 200px;
+    width: 200px;
+    background-color: #f0f0f0;
+    margin: auto;
+}
+.container img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.container-2 {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.block-2 {
+    height: 200px;
+    width: 200px;
+    background-color: #3498db;   
+}
+
+.container-3 {
+    background-color: #3498db;
+    border: 3px black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-3 {
+    margin: 3px;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+}
+.block-wrapper {
+    background-color: white;
+    height: 400px;
+    border-radius: 7px;
+}
+.absolute-block {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+}
+.block-4 {
+    border-color: red;
+    top: 1650px;
+    left:50px;
+ }
+ .block-5 {
+    border-color: green;
+    top: 1700px;
+    left:125px;
+ }
+ .block-6 {
+    border-color: blue;
+    top:1750px;
+    left: 175px;
+ }
+ .image img{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    right: 7px;
+    bottom: 0;
+ }
+

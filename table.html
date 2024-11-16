@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Таблица</title>
+        <link rel="stylesheet" href="css/table.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <a href="Lab5.html">Основная страница</a>
+            <a href="page2.html">Позиционирование элементов</a>
+            <a href="table.html">Таблица</a>
+        </div> 
+        <table>
+            <caption>Студенты</caption>
+            <tr>
+                <th>id</th>
+                <th>ФИО студента</th>
+                <th>№ зачётной книжки</th>
+                <th>Номер группы</th>
+                <th>Пол</th>
+                <th>Возраст</th>
+                <th>Форма поступления</th>
+                <th>Название направления</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Иванов Иван Иванович</td>
+                <td>123456</td>
+                <td>101</td>
+                <td>М</td>
+                <td>19</td>
+                <td>Бюджет</td>
+                <td>Информатика и вычислительная техника</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Петрова Анна Сергеевна</td>
+                <td>654321</td>
+                <td>102</td>
+                <td>Ж</td>
+                <td>20</td>
+                <td>Контракт</td>
+                <td>Прикладная математика и Информатика</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Сидоров Михаил Петрович</td>
+                <td>789012</td>
+                <td>103</td>
+                <td>М</td>
+                <td>21</td>
+                <td>Бюджет</td>
+                <td>Программная инженерия</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Кузнецова Мария Александровна</td>
+                <td>345678</td>
+                <td>104</td>
+                <td>Ж</td>
+                <td>22</td>
+                <td>Контракт</td>
+                <td>Информационная безопасность автоматизированных систем</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Васильев Дмитрий Николаевич</td>
+                <td>901234</td>
+                <td>105</td>
+                <td>М</td>
+                <td>20</td>
+                <td>Бюджет</td>
+                <td>Радиотехника</td>
+            </tr>
+        </table>
+
+        <form id="student">
+                <label for="id">Id: </label>
+                <input type="number" id="id" name="id" required><br>
+                <label for="fio">ФИО: </label>
+                <input type="text" id="fio" name="fio" required><br>
+                <label for="numRecordBook">Номер зачётной книжки: </label>
+                <input type="number" id="numRecordBook" name="numRecordBook" required><br>
+                <label for="numOfGroup">Номер группы: </label>
+                <input type="number" id="numOfGroup" name="numOfGroup" required><br>
+            <fieldset>
+                <legend>Пол:</legend>
+                <input type="radio" id="male" name="gender" value="М" required>
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="Ж">
+                <label for="female">Женский</label><br>
+            </fieldset>
+                <label for="age">Возраст: </label>
+                <input type="number" id="age" name="age" min="16" max="100" required><br>
+            <fieldset>
+                <legend>Форма поступления:</legend>
+                <input type="radio" id="budget" name="formofadmission" value="Бюджет" required>
+                <label for="budget">Бюджет</label>
+                <input type="radio" id="contract" name="formofadmission" value="Контракт">
+                <label for="contract">Контракт</label><br>
+            </fieldset>
+                <label for="direction">Название направления: </label>
+                <input type="text" id="direction" name="direction" required><br>
+                <input type="submit" value="Добавить" id="addButton">
+        </form>
+    </body>
+</html>
